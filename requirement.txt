@@ -1,0 +1,13 @@
+ray
+datasets
+numpy
+names
+openai
+transformers
+pandas
+matplotlib
+langchain
+seaborn
+pydantic
+flatten-dict
+pydantic
