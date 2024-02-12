@@ -38,6 +38,6 @@ This benchmark makes the following changes:
 # Usage
 
 You can use this repo by going through the following steps:
-1. Create synthetic datasets with the tools under data/
+1. Create synthetic datasets with the tools under dataset/
 2. Maybe fine-tune
 3. Benchmark and plot with bio_haystack_benchmark.py
