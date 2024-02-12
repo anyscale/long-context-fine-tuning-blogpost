@@ -2,6 +2,7 @@
 
 This repo is for benchmarking LLM's ability to extract small bits of information from long context.
 We adapted the benchmark from Greg Kamradt's original Needle in a Haystack Benchmark to our preferences.
+
 [Original benchmark](https://github.com/gkamradt/LLMTest_NeedleInAHaystack)
 [Original tweet](https://twitter.com/GregKamradt/status/1722386725635580292)
 
@@ -9,12 +10,12 @@ Aside from the benchmarking code, we also create a dataset to fine-tune for the 
 
 ## The original benchmark
 
-In the original benchmark, we extact a small bit of information, called "the needle", from a large context.
+In the original "Needle in a Haystack" benchmark, we extact a small bit of information, called "the needle", from a large context.
 The large context, called "the haystack", are concatenated esseys by Paul Graham.
 The following text ("needle") is inserted at varying positions into these esseys varying positions: "The best thing to do in San Francisco is eat a sandwich and sit in Dolores Park on a sunny day.".
 Note that the information from the esseys and the needle are not related much. Therefore, it might be easier for a model to single out information about the needle in the haystack.
 The model is then given the haystack with the needle and asked "What is the best thing to do in San Francisco?" and _not_ to "give information outside the document or repeat your findings".
-Note that eating a sandwich and sitting in Dolores Park on a sunny day is understood to be a good answer to the posed question based on general knowledge outside the context. We therefore expect models trained on large chunks of publicly available data to be preconditioned to output this information.
+Note that eating a sandwich and sitting in Dolores Park on a sunny day is understood to be a good answer to the posed question based on general knowledge outside the context. We therefore expect models trained on large chunks of publicly available data to be preconditioned to output such information.
 
 ## Notable changes to the original benchmark
 
