@@ -48,4 +48,5 @@ We use the following workflow:
 2. Maybe fine-tune with your tool of choice. The dataset are in an OpenAI/Anyscale compatible format.
 3. Fit `plot_aggregated.py` and `plot_haystack.py` to whatever models you are benchmarking.
 4. Benchmark and plot with `bio_haystack_benchmark.py`
+    - This requires you to set set your `AE_API_KEY` and `OPENAI_API_KEY` as environment variables. Comment out relevant lines if needed.
 5. After benchmarking some models, use `plot_aggregated.py` to plot an overview.
