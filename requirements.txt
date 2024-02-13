@@ -1,0 +1,13 @@
+ray
+datasets==2.17.0
+numpy
+names
+openai
+transformers @ git+https://github.com/huggingface/transformers.git@e768616afa1a1e20bd9678c8099891d8529e89da
+pandas
+matplotlib
+langchain
+seaborn
+pydantic
+flatten-dict
+pydantic

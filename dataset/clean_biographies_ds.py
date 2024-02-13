@@ -107,7 +107,7 @@ class Mapper:
         row["bio_token_len"] = len(bio_tokens["input_ids"])
         return row
 
-final_ds = ds.repartition(100).map(Mapper, compute=ray.data.ActorPoolStrategy(size=100))
+final_ds = ds.repartition(100).map(Mapper, concurrency=100)
 
 df = final_ds.to_pandas()
 entries = df.loc[df['bio_token_len'] <= MAX_TOKENS].loc[df['bio_token_len'] > MIN_TOKENS].to_dict("records")
