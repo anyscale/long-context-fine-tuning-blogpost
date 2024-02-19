@@ -154,7 +154,7 @@ def test(model_to_test_description, results_version, model=None):
                 elif model_to_test_description == "mistralai/Mixtral-8x7B-Instruct-v0.1":
                     response = ask_mixtral(messages)
                 else:
-                    response = ask_ray_llm(messages, model_to_test_description)
+                    raise ValueError(f"Model {model_to_test_description} not supported.")
 
                 # Compare the reponse to the actual needle you placed
                 score, evaluation = evaluate_json_response(response, needle)
