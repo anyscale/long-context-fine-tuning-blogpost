@@ -1,3 +1,5 @@
+> ⚠️ This repository is no longer maintained. It accompanied the blog post "Fine-tuning LLMs for longer context and better RAG systems" (https://www.anyscale.com/blog/fine-tuning-llms-for-longer-context-and-better-rag-systems). For current fine-tuning guidance, see Ray Train: https://docs.ray.io/en/latest/train/train.html
+
 # Needle in a Haystack - Biographies Benchmark
 
 This repo is for benchmarking LLM's ability to extract small bits of information from long context.
